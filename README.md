@@ -92,4 +92,4 @@ src/
 
 ## 📝 License
 
-This project is intended for educational purposes.
+This project is licensed under the MIT [License](LICENSE).
