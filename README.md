@@ -38,39 +38,15 @@ This repository contains implementations for three main course modules:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/MatiasCarabella/algorithms-and-data-structures
 cd algorithms-and-data-structures
 ```
 
-2. Run the application (Gradle will handle compilation automatically):
+2. Run the application
 ```bash
-# On Windows
-gradlew run
-
-# On macOS/Linux
 ./gradlew run
 ```
 
-That's it! The Gradle wrapper handles everything for you.
-
-### Other Useful Commands
-
-```bash
-# Build the project
-./gradlew build
-
-# Clean build artifacts
-./gradlew clean
-
-# Format code with Spotless
-./gradlew spotlessApply
-
-# Check code formatting
-./gradlew spotlessCheck
-
-# Create executable JAR
-./gradlew jar
-```
 
 ## 📁 Project Structure
 
