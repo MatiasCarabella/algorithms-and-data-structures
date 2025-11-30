@@ -17,7 +17,7 @@ This repository contains implementations for three main course modules:
 - **lab3**: Hash Tables
 - **lab4**: QuickSort & MergeSort
 
-### 2. Algorithms and Data Structures Workshop I
+### 2. Algorithms and Data Structures Workshop
 - **lab1**: Object Handling, Arrays & Exception Management
 - **lab2**: Stacks & Queues
 - **lab3**: Linked Lists
