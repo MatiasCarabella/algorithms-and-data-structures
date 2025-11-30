@@ -1,0 +1,66 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.diffplug.spotless' version '7.0.2'
+}
+
+group = 'com.app'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+application {
+    mainClass = 'main.java.App'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add dependencies here if needed in the future
+}
+
+tasks.named('run') {
+    standardInput = System.in
+}
+
+// Custom task for easier execution
+task runApp(type: JavaExec) {
+    group = 'application'
+    description = 'Run the Data Structures and Algorithms application'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'main.java.App'
+    standardInput = System.in
+}
+
+// Spotless configuration for code formatting
+spotless {
+    java {
+        target 'src/**/*.java'
+        
+        // Use Google Java Format
+        googleJavaFormat('1.24.0')
+        
+        // Remove unused imports
+        removeUnusedImports()
+        
+        // Ensure files end with a newline
+        endWithNewline()
+        
+        // Trim trailing whitespace
+        trimTrailingWhitespace()
+    }
+}

@@ -1,53 +1,76 @@
 # Data Structures and Algorithms - Java Implementation
 
+![Java](https://img.shields.io/badge/Java-25-orange?style=flat&logo=openjdk&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-9.2.1-02303A?style=flat&logo=gradle&logoColor=white)
+![Spotless](https://img.shields.io/badge/Spotless-7.0.2-blue?style=flat)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat)
+
 A comprehensive collection of data structures and algorithms implementations in Java, organized by course modules. This project serves as a practical reference for computer science students and developers learning fundamental algorithms and data structures.
 
 ## 📋 Project Overview
 
 This repository contains implementations for three main course modules:
 
-### 1. Algorithms and Data Structures I (AyED1)
+### 1. Algorithms and Data Structures I
 - **lab1**: Search Algorithms & Big O Notation
 - **lab2**: Data Structures - Stacks & Linked Lists
 - **lab3**: Hash Tables
 - **lab4**: QuickSort & MergeSort
 
-### 2. Algorithms and Data Structures Workshop I (TAyED1)
+### 2. Algorithms and Data Structures Workshop I
 - **lab1**: Object Handling, Arrays & Exception Management
 - **lab2**: Stacks & Queues
 - **lab3**: Linked Lists
 - **lab4**: QuickSort Implementation
 
-### 3. Algorithms and Data Structures II (AyED2)
+### 3. Algorithms and Data Structures II
 - **lab2**: Binary Trees
 - **lab3**: Binary Search Trees (BST)
-- **lab4**: Huffman Tree Compression
+- **lab4**: Huffman Tree Compression (in-memory text compression)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Java Development Kit (JDK) 8 or higher
-- A Java IDE (VS Code, IntelliJ IDEA, Eclipse, etc.)
+- Java Development Kit (JDK) 25 (Gradle will automatically download it if needed)
 
 ### Running the Project
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/MatiasCarabella/algorithms-and-data-structures
-```
-
-2. Navigate to the project directory:
-```bash
+git clone <repository-url>
 cd algorithms-and-data-structures
 ```
 
-3. Compile and run the main application:
+2. Run the application (Gradle will handle compilation automatically):
 ```bash
-javac src/main/java/App.java
-java -cp src main.java.App
+# On Windows
+gradlew run
+
+# On macOS/Linux
+./gradlew run
 ```
 
-4. Follow the interactive menu to explore different implementations.
+That's it! The Gradle wrapper handles everything for you.
+
+### Other Useful Commands
+
+```bash
+# Build the project
+./gradlew build
+
+# Clean build artifacts
+./gradlew clean
+
+# Format code with Spotless
+./gradlew spotlessApply
+
+# Check code formatting
+./gradlew spotlessCheck
+
+# Create executable JAR
+./gradlew jar
+```
 
 ## 📁 Project Structure
 
@@ -92,59 +115,6 @@ src/
 - **Tree Traversals**: Inorder, Preorder, Postorder
 - **Compression**: Huffman Encoding
 
-### Interactive Features
-- Console-based menu system
-- Real-time demonstrations of data structure operations
-- Step-by-step algorithm execution
-- Input validation and error handling
-
-## 💡 Usage Examples
-
-The application provides an interactive menu where you can:
-
-1. Select a course module (AyED1, TAyED1, AyED2, TAyED2)
-2. Choose a specific practical work (TP)
-3. Execute and observe the implementation in action
-
-Example operations include:
-- Adding/removing elements from stacks and queues
-- Searching for elements in different data structures
-- Sorting arrays with different algorithms
-- Building and traversing tree structures
-- Compressing text files using Huffman encoding
-
-## 🛠️ Technical Details
-
-- **Language**: Java
-- **Paradigm**: Object-Oriented Programming
-- **Build System**: Standard Java compilation
-- **IDE Support**: Compatible with VS Code, IntelliJ IDEA, Eclipse
-
-## 📚 Learning Resources
-
-This project covers fundamental computer science concepts:
-- Time complexity analysis (Big O notation)
-- Space complexity considerations
-- Recursive vs iterative implementations
-- Data structure selection and trade-offs
-- Algorithm optimization techniques
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-- Improve documentation
-
 ## 📝 License
 
 This project is intended for educational purposes.
-
-## 👥 Authors
-
-Created as part of university coursework for Algorithms and Data Structures courses.
-
----
-
-**Note**: This is an educational project designed to demonstrate fundamental data structures and algorithms concepts through practical implementations.
