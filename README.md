@@ -2,9 +2,8 @@
 
 ![Java](https://img.shields.io/badge/Java-25-orange?style=flat&logo=openjdk&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-9.2.1-02303A?style=flat&logo=gradle&logoColor=white)
-![Spotless](https://img.shields.io/badge/Spotless-7.0.2-blue?style=flat)
+![Spotless](https://img.shields.io/badge/Spotless-8.1.0-blue?style=flat)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat)
 
 A comprehensive collection of data structures and algorithms implementations in Java, organized by course modules. This project serves as a practical reference for computer science students and developers learning fundamental algorithms and data structures.
 

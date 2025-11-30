@@ -34,7 +34,7 @@ public class Menu {
       System.out.println();
       System.out.println("Select the corresponding course option:");
       System.out.println("1. Algorithms and Data Structures I");
-      System.out.println("2. Algorithms and Data Structures Workshop I");
+      System.out.println("2. Algorithms and Data Structures Workshop");
       System.out.println("3. Algorithms and Data Structures II");
       System.out.println("0. Exit");
       System.out.println();
