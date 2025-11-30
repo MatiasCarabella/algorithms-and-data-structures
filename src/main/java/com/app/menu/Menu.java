@@ -74,7 +74,7 @@ public class Menu {
       System.out.println("2. LAB2: Data Structures - Stacks - Linked Lists");
       System.out.println("3. LAB3: Hash Tables");
       System.out.println("4. LAB4: QuickSort - MergeSort");
-      System.out.println("0. Exit");
+      System.out.println("0. Back");
       System.out.println();
       System.out.print("Option: ");
 
@@ -98,7 +98,7 @@ public class Menu {
           demonstrateSortingAlgorithms();
           break;
         case 0:
-          System.out.println("Goodbye!");
+          System.out.println("Returning to main menu...");
           break;
         default:
           System.out.println("Invalid option, please try again.");
@@ -116,7 +116,7 @@ public class Menu {
       System.out.println("2. LAB2: Stacks and Queues");
       System.out.println("3. LAB3: Linked Lists");
       System.out.println("4. LAB4: QuickSort");
-      System.out.println("0. Exit");
+      System.out.println("0. Back");
       System.out.println();
       System.out.print("Option: ");
 
@@ -140,7 +140,7 @@ public class Menu {
           demonstrateQuickSortWithTeams();
           break;
         case 0:
-          System.out.println("Goodbye!");
+          System.out.println("Returning to main menu...");
           break;
         default:
           System.out.println("Invalid option, please try again.");
@@ -156,7 +156,7 @@ public class Menu {
       System.out.println("1. LAB2: Binary Trees");
       System.out.println("2. LAB3: Binary Search Trees (BST)");
       System.out.println("3. LAB4: Huffman Tree");
-      System.out.println("0. Exit");
+      System.out.println("0. Back");
       System.out.println();
       System.out.print("Option: ");
 
@@ -177,7 +177,7 @@ public class Menu {
           demonstrateHuffmanTree();
           break;
         case 0:
-          System.out.println("Goodbye!");
+          System.out.println("Returning to main menu...");
           break;
         default:
           System.out.println("Invalid option, please try again.");
@@ -200,6 +200,7 @@ public class Menu {
     } catch (Exception e) {
       System.out.println("Error: " + e.getMessage());
     }
+    pressEnterToContinue();
   }
 
   private void demonstrateStack() {
@@ -210,6 +211,7 @@ public class Menu {
     stack.display();
     System.out.println("Popping top of stack: " + stack.pop());
     stack.display();
+    pressEnterToContinue();
   }
 
   private void demonstrateHashTable() {
@@ -230,6 +232,7 @@ public class Menu {
     element = 7;
     i = HashTable.search(hashTable, tableSize, element);
     i = HashTable.delete(hashTable, tableSize, 130);
+    pressEnterToContinue();
   }
 
   private void demonstrateSortingAlgorithms() {
@@ -248,6 +251,7 @@ public class Menu {
     quickSort.sort(arr2, 0, arr2.length - 1);
     System.out.println("\nArray sorted by Quick Sort");
     displayArray(arr2);
+    pressEnterToContinue();
   }
 
   private void demonstrateObjectsAndArrays(Scanner keyboard) {
@@ -497,6 +501,7 @@ public class Menu {
             + dequeuedOrder2.getCustomerName()
             + ", Brick Quantity: "
             + dequeuedOrder2.getBrickQuantity());
+    pressEnterToContinue();
   }
 
   private void demonstrateLinkedLists() {
@@ -554,6 +559,7 @@ public class Menu {
     tree.inorder(tree.root);
     Integer height = tree.height(tree.root);
     System.out.println("\n\nTree height: " + height.toString());
+    pressEnterToContinue();
   }
 
   private void demonstrateBinarySearchTree() {
@@ -585,6 +591,7 @@ public class Menu {
     System.out.println("\n\nKey 50 in BST: " + found);
     found = bst.search(12);
     System.out.println("Key 12 in BST: " + found);
+    pressEnterToContinue();
   }
 
   private void demonstrateHuffmanTree() {
@@ -611,6 +618,7 @@ public class Menu {
     System.out.println("\n=== Demo Complete ===");
     System.out.println(
         "Notice how texts with repeated characters achieve better compression ratios!");
+    pressEnterToContinue();
   }
 
   // Helper methods
