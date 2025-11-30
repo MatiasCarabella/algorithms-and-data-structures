@@ -1,6 +1,5 @@
 <div align="center">
-# Data Structures and Algorithms - Java Implementation
-
+<h1>Data Structures and Algorithms - Java Implementation</h1>
 ![Java](https://img.shields.io/badge/Java-25-orange?style=flat&logo=openjdk&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-9.2.1-02303A?style=flat&logo=gradle&logoColor=white)
 ![Spotless](https://img.shields.io/badge/Spotless-8.1.0-blue?style=flat)
